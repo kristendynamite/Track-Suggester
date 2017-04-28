@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|League+Script" rel="stylesheet"> -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Which Programming Track Should You Choose?</h1>
+      <p> Fill out the survey below and hit the 'submit' button to find out which programming track may be best for you.</p>
+      <form id="userInput">
+        <div class="form-group">
+          <label class="words" for="name">Your Name</label>
+            <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label class="words" for="fiveYears">Where do you see yourself in five years?</label>
+            <input id="fiveYears" class="form-control" type="text">
+        </div>
+        <h2>Which of the following MOST appeals to you</h2>
+        <select class="form-control" id="design">
+          <option></option>
+          <<option>Designing the navigation and layout of a website</option>
+          <option>Solving for bad website interfaces and poor user experience</option>
+          <option>Building the infrastructure of an app</option>
+        </select>
+        <h2>What type of company or work environment would you prefer?</h2>
+        <select class="form-control" id="company">
+          <option></option>
+          <option>Large corporation or enterprise company</option>
+          <option>Small business or start-up</option>
+          <option>Working for yourself, remotely</option>
+        </select>
+        <h2>Are you primarily interested in working in mobile application development?</h2>
+        <select class="form-control" id="android">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <button type="submit" class="btn">Find your track!</button>
+      </form>
+      <div class="Suggestion">
+        <div class="Java">
+          <h3>Java / Android</h3>
+          <p>Check it out, <span class="name"></span></p>. Given your interest in mobile application development, we suggest you take the Java / Android track.</p>
+        </div>
+        <div class="Design">
+          <h3>CSS / Design</h3>
+          <p>Check it out, <span class="name"></span></p>. Given your interest in layouts and design, we suggest you take the CSS / Design track.</p>
+        </div>
+        <div class="CSharp">
+          <h3>C# / .NET</h3>
+          <p>Check it out, <span class="name"></span></p>. Given your interest in building the infrastructure of apps, we suggest you take the C# / .NET track.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
