@@ -1,11 +1,9 @@
-
+.suggestion {
+  display: none;
+}
 
 h1 {
   font-family: 'Architects Daughter', cursive;
-}
-
-.suggestion {
-  display: none;
 }
 
 h4 {
